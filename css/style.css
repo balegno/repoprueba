@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #fcfcfc;
+}
+
+html {
+    font-size: 62.5%;
+}
+/*BODY*/
+body {
+    background-color: #2c0735;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #fcfcfc;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h2 {
+    font-size: 3rem;
+    color: #fcfcfc;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #fcfcfc;
+    font-family: 'Roboto Mono', monospace;
+}
+
+p {
+    font-size: 2rem;
+    color: #fcfcfc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner {
+    color: black;
+    text-align: center;
+}
+
+
+.boton {
+    color: #ec9a29;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #613dc1;
+    padding: .9rem;
+    border-radius: 1.4rem;
+}
+
+/*
+.serv {
+    height: 8rem;
+} */
+
+/*Menu navegacion Flex*/
+
+#header-flex {
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 767px) {
+    #header-flex {
+        flex-direction: column;
+    }
+}
+
+#header-flex img {
+    width: 8rem;
+}
+
+
+
+.lista-navegacion {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+@media screen and (max-width: 487px) {
+    .lista-navegacion {
+        flex-direction: column;
+    }
+}
+
+
+.lista-navegacion li {
+    font-size: 1.8rem;
+    text-decoration: none;
+    list-style: none;
+    background-color: #613dc1;
+    padding: 1rem;
+    border-radius: 1.4rem;
+}
+
+.lista-navegacion li:hover {
+    transform: scale(1.1);
+    background-color: #ec9a29;
+    border: solid 1px #fcfcfc;
+}
+
+/* DESTOP FIRST*/
+/*GRILLA PRINCIPAL*/
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "productos productos productos"
+    "banner banner banner"
+    "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/*HEADER*/
+
+/*#header-flex {
+    grid-area: header;
+}*/
+
+/*SERVICIOS*/
+
+#servicios {
+    grid-area: productos;
+}
+
+#servicios h2, 
+#servicios li,
+#servicios p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.lili li {
+    font-size: 1.5rem;
+}
+
+.padre-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2rem;
+    justify-items: center;
+}
+
+@media screen and (max-width: 1090px) {
+    .padre-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .padre-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.card {
+    width: 23rem;
+    border: solid 2px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: rgba(63, 64, 69, 50%);
+}
+
+.card img {
+    margin-bottom: 1rem;
+    height: 14rem;
+}
+
+/*BANNER*/
+
+#banner {
+    grid-area: banner;
+    background-color: #eaeaea;
+    margin-top: 4rem;
+    padding: 2rem;
+}
+
+#banner h2,
+#banner h3,
+#banner li {
+    text-align: center;
+    color: black;
+}
+
+
+.padre-banners {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+@media screen and (max-width: 992px) {
+    .padre-banners {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .padre-banners {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.banner-caracteristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .ulli{
+        text-decoration: none;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1.6rem;
+        margin: 2rem;
+        list-style: none;
+    }
+
+/*CONTACTO*/
+
+#contacto {
+    grid-area: productos;
+    
+}
+
+#contacto h2 {
+    text-align: center;
+    margin: 2rem;
+}
+
+#form {
+    grid-area: banner;
+    display: flex;
+}
+
+.fiel {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.4rem;
+    width: 40rem;
+    padding: 2rem;
+}
+
+.leg-conta div {
+    gap: 1rem;
+}
+
+.leg-conta {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.8rem;
+}
+
+.boton {
+    align-items: center;
+}
+
+
+
+
+
+
+/*FIN CONTACTO*/
+
+
+/*NOSOTROS*/
+
+
+/*FIN NOSOTROS*/
+
+/*FOOTER*/
+
+#footer {
+    grid-area: footer;
+}
+
+#footer p {
+    margin-top: 3rem;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.4rem;
+    background-color: #fcfcfc;
+    padding: 1rem 3rem;
+}
+
+
+/*FOOTER*/
