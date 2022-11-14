@@ -312,12 +312,32 @@ input{
     flex-direction: row;
     justify-content: center;
 }
+.chk {
+    display: none;
+}
 
 @media screen and (max-width:495px) {
-    .fiel {
-        height: ;
-    }
-    
+    #formu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+        .chk {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            
+        }
+        .chq {
+            display: none;
+        }
+
+        .fiel {
+            width: 30rem;
+        }
+
 }
 
 /*FIN CONTACTO*/

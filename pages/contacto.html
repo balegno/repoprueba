@@ -33,34 +33,36 @@
     </section>
 
     
-    <section>
-      <form id="formu">
+    <section id="formu">
+      <form>
         <fieldset class="fiel">
           
           <div> 
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido" required>
+            <label class="lab" for="apellido">Apellido</label>
+            <input class="inp" type="text" name="apellido" id="apellido" required>
           </div>
 
           <div>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" required>
+            <label class="lab" for="nombre">Nombre</label>
+            <input class="inp" type="text" name="nombre" id="nombre" required>
           </div>
 
           <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required>
+            <label class="lab" for="email">Email</label>
+            <input class="inp" type="email" name="email" id="email" required>
         </div>
 
-        <div>
+        <!-- Checkbox Descktop -->
+
+        <div class="chq">
           <label for="insta">Instagram</label>
           <input type="checkbox" name="insta" id="insta">
-        
-
-        
+          
+          
           <label for="linkedin">LinkedIn</label>
           <input type="checkbox" name="linkedin" id="linkedin">
         
+      
 
         
           <label for="face">Facebook</label>
@@ -70,9 +72,34 @@
           <label for="twet">Twetter</label>
           <input type="checkbox" name="twet" id="twet">
         </div>
+
+
+        <!-- checkbox movil -->
+        <div>
+          <div class="chk">
+            <label for="insta">Instagram</label>
+            <input type="checkbox" name="insta" id="insta">
+            
+            
+            <label for="linkedin">LinkedIn</label>
+            <input type="checkbox" name="linkedin" id="linkedin">
+          </div>
+        
+
+          <div class="chk">
+            <label for="face">Facebook</label>
+            <input type="checkbox" name="face" id="face">
+
+
+            <label for="twet">Twetter</label>
+            <input type="checkbox" name="twet" id="twet">
+          </div>
+
+          
+        </div>
         <label class="coment" for="comentarios">Comentarios:</label>
         <div class="comen">
-        <textarea name="comentarios" id="comentarios" cols="40" rows="12" maxlength="300"></textarea>
+        <textarea name="comentarios" id="comentarios" cols="25" rows="5" maxlength="300"></textarea>
         </div>
 
         <div>
