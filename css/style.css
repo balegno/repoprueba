@@ -303,9 +303,6 @@ input{
     margin: .4rem;
 }
 
-.coment {
-    font-size: 2.8rem;
-}
 
 .bot {
     display: flex;
@@ -315,13 +312,20 @@ input{
 .chk {
     display: none;
 }
+.labin {
+    display: none;
+}
+::placeholder {
+    color: rgb(0, 255, 255, 0%);
+}
 
-@media screen and (max-width:495px) {
+@media screen and (max-width:480px) {
     #formu {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         }
         .chk {
             display: flex;
@@ -333,11 +337,23 @@ input{
         .chq {
             display: none;
         }
-
         .fiel {
             width: 30rem;
         }
 
+        .labin {
+            display: none;
+        }
+        .lab {
+            display: none;
+        }
+        ::placeholder {
+            color: black;
+        }
+        #comentarios {
+            color: black;
+            padding: 1rem;
+        }
 }
 
 /*FIN CONTACTO*/
