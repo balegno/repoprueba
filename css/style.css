@@ -28,7 +28,8 @@ h2 {
     font-size: 3rem;
     color: #fcfcfc;
     font-family: 'Roboto Mono', monospace;
-    /* text-align: center; */
+    text-align: center;
+    margin: 1rem 0rem 2rem;
 }
 
 h3 {
@@ -43,10 +44,6 @@ p {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     margin: 1rem;
-}
-
-.pie {
-    
 }
 
 .banner {
@@ -144,8 +141,7 @@ p {
 #servicios {
     grid-area: productos;
 }
-
-#servicios h2, 
+ 
 #servicios li,
 #servicios p {
     text-align: center;
@@ -316,30 +312,91 @@ input{
 
 /*NOSOTROS*/
 
+#papcar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardnos {
+    display: flex;
+    flex-direction: column;
+}
+
+
 #nosfil {
     border: solid 1.8px #ec9a29;
     background-color: rgb(97, 61, 193, 60%);
-    border-radius: 3.5rem;
-
+    width: 48rem;
+    border-radius: 2rem 8rem;
+    display: flex;
+    margin: 1rem;
 }
 .mmbf {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-content: rigth;
-    height: 30rem;
-    border-radius: 40% 0%;
-
+    margin: 1rem;
+    height: 20rem;
+    border-radius: 10% 40%;
 }
 
-.le {
+.nomm {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    font-size: 1.5rem;
+    margin: 1rem;
+}
 
+.datos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4rem;
+    list-style: circle;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
 }
 
 
-/*FIN NOSOTROS*/
+/* Mediaquerry */
+
+#papcar {
+    display: grid;
+    grid-area: productos;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+    justify-items: center;
+} 
+
+
+@media screen and (max-width:990px){
+    #papcar {
+        grid-template-columns: repeat(1, 1fr) ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+} 
+
+@media screen and (max-width:565px){
+    #papcar {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+    }
+    #nosfil {
+        display: flex;
+        flex-direction: column;
+        height: 45rem;
+        width: 24rem;
+        display: flex;
+    }
+
+} 
+
+
+
+    /*FIN NOSOTROS*/
 
 
 /* PORFOLIO */
