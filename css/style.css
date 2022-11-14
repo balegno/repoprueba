@@ -29,7 +29,6 @@ h2 {
     color: #fcfcfc;
     font-family: 'Roboto Mono', monospace;
     text-align: center;
-    margin: 1rem 0rem 2rem;
 }
 
 h3 {
@@ -325,10 +324,11 @@ input{
 
 
 #nosfil {
-    border: solid 1.8px #ec9a29;
-    background-color: rgb(97, 61, 193, 60%);
     width: 48rem;
     border-radius: 2rem 8rem;
+    border: solid 1.8px #ec9a29;
+    background-color: rgb(97, 61, 193, 60%);
+    
     display: flex;
     margin: 1rem;
 }
@@ -338,7 +338,7 @@ input{
     justify-content: flex-end;
     margin: 1rem;
     height: 20rem;
-    border-radius: 10% 40%;
+    border-radius: 5% 40%;
 }
 
 .nomm {
