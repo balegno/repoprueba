@@ -155,7 +155,8 @@ p {
 }
 
 .lili li {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .padre-cardserv {
@@ -318,6 +319,10 @@ input{
 ::placeholder {
     color: rgb(0, 255, 255, 0%);
 }
+.comen {
+    color: black;
+    padding: 1rem;
+}
 
 @media screen and (max-width:480px) {
     #formu {
@@ -349,8 +354,14 @@ input{
         }
         ::placeholder {
             color: black;
+            font-size: 1.5rem;
+            
         }
         #comentarios {
+            color: black;
+            padding: 1rem;
+        }
+        .comen {
             color: black;
             padding: 1rem;
         }
