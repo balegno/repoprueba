@@ -72,10 +72,14 @@ p {
 
 /*Menu navegacion Flex*/
 
-
 #header-flex img {
     width: 8rem;
 }
+
+.navbar {
+    margin-right: 1rem;
+}
+
 
 .nav-link {
     font-family: 'Roboto Mono', monospace;
@@ -88,9 +92,16 @@ p {
 }
 
 
+/*#header-flex {
+    grid-area: header;
+}*/
+
+/*SERVICIOS*/
 
 
-.nav-link  {
+
+
+a.nav-link {
     margin: 0.5rem;
     background-color: #613dc1;
 }
@@ -115,13 +126,6 @@ p {
     grid-template-columns: repeat(3, 1fr);
 }
 
-/*HEADER*/
-
-/*#header-flex {
-    grid-area: header;
-}*/
-
-/*SERVICIOS*/
 
 #servicios {
     grid-area: productos;
