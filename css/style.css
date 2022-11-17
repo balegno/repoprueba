@@ -200,6 +200,10 @@ a.nav-link {
     margin-top: 4rem;
     padding: 2rem;
 }
+#banner li {
+    list-style-type: square;
+    margin-bottom: 3rem;
+}
 
 #banner h2,
 #banner h3,
@@ -305,12 +309,11 @@ input{
     flex-direction: row;
     justify-content: center;
 }
-.chk {
+.chk,
+.labinp {
     display: none;
 }
-.labin {
-    display: none;
-}
+
 ::placeholder {
     color: rgb(0, 255, 255, 0%);
 }
@@ -334,28 +337,21 @@ input{
             justify-content: center;
             
         }
-        .chq {
-            display: none;
-        }
-        .fiel {
-            width: 30rem;
-        }
-
-        .labin {
-            display: none;
-        }
+        .chq, 
+        .labin,
         .lab {
             display: none;
+        }
+        
+        .fiel {
+            width: 30rem;
         }
         ::placeholder {
             color: black;
             font-size: 1.5rem;
             
         }
-        #comentarios {
-            color: black;
-            padding: 1rem;
-        }
+        #comentarios,
         .comen {
             color: black;
             padding: 1rem;
