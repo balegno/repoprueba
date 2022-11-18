@@ -274,14 +274,7 @@ a.nav-link {
     color: #f5f5f5;
     text-align: center;
 }
-/* 
-.comen {
-    margin: 1rem;
-    display: flex;
-    justify-content: center;
-}
 
-*/
 #comentarios{
     color: black;
     border-radius: 1rem;
@@ -305,43 +298,18 @@ input{
     margin: .4rem;
 }
 
-/*
 
-@media screen and (max-width:480px) {
-    #formu {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        }
-        .chk {
-            display: flex;
-            flex-direction: row;
-            align-content: center;
-            justify-content: center;
-        }
-        .chq {
-            display: none;
-        }
-        
-        .lab{
-            display: none;
-        }
-        
-} */
 
 
 /* DESCKTOP */
 
 .labinp {
     display: none;
+    
 }
 .chk {
     display: none;
 }
-
-
 
 
 /* mobile */
@@ -367,13 +335,11 @@ input{
             display: none;
         }
         
+        
         .fiel {
             width: 30rem;
         }
-        ::placeholder {
-            color: #9e9e9e;
-            font-size: 1.5rem;
-        }
+        
         #comentarios,
         .comen {
             color: black;
