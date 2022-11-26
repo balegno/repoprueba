@@ -113,9 +113,7 @@ a.nav-link {
 #servicios {
   grid-area: productos;
 }
-
-#servicios li,
-#servicios p {
+#servicios li, #servicios p {
   text-align: center;
   margin-bottom: 1.5rem;
 }

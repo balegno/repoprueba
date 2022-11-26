@@ -1,13 +1,13 @@
 
 #servicios {
     grid-area: productos;
+    
+    li, p {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
 }
 
-#servicios li,
-#servicios p {
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
 
 .lili li {
     font-size: 1.3rem;
