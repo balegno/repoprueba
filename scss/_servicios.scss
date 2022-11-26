@@ -1,0 +1,53 @@
+
+#servicios {
+    grid-area: productos;
+}
+
+#servicios li,
+#servicios p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.lili li {
+    font-size: 1.3rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.padre-cardserv {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2rem;
+    justify-items: center;
+}
+
+@media screen and (max-width: 1090px) {
+    .padre-cardserv {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .padre-cardserv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.cardserv {
+    width: 23rem;
+    border: solid 2px gray;
+    border-radius: 1rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #5d737e;
+}
+
+.card img {
+    margin-bottom: 1rem;
+    height: 14rem;
+}
