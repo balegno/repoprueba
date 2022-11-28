@@ -7,9 +7,7 @@
 }
 
 #formu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-colum-center;
     
 }
 
@@ -68,10 +66,8 @@ input{
 
 @media screen and (max-width:480px) {
     #formu {
-        display: flex;
-        flex-direction: column;
+        @include flex-colum-center;
         justify-content: center;
-        align-items: center;
 
         }
         .chk {

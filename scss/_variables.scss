@@ -60,10 +60,10 @@ p {
     background-color:#613dc1 ;
     padding: .5rem;
     border-radius: 1.3rem;
-}
-.boton a {
+    a {
     text-decoration: none;
     color: black;
+    }
 }
 
 .boton a:hover {
@@ -75,7 +75,7 @@ p {
     transform: scale(1);
     background-color: #ec9a29;
     border: solid 1px #fcfcfc;
-    color: #eaeaea;
+    color: #fcfcfc;
 }
 
 .serv {
@@ -101,14 +101,22 @@ p {
     border-radius: 1rem;
     padding: 0.5rem;
     text-align: center;
-    
+    background-color: #613dc1;
+    margin: 0rem .5rem;
 }
 
-a.nav-link {
-    margin: 0.5rem;
-    background-color: #613dc1;
-}
 
 .navbar-toggler {
     background-color: #613dc1;
+}
+
+
+/*EXTENDS*/
+
+
+/*MIXIN*/
+@mixin flex-colum-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
