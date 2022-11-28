@@ -108,10 +108,26 @@ p {
 
 /*EXTENDS*/
 /*MIXIN*/
+/*GRILLA*/
+#grilla {
+  display: grid;
+  grid-template-areas: "header header header" "productos productos productos" "banner banner banner" "footer footer footer";
+  grid-template-columns: repeat(3, 1fr);
+}
+
 #servicios {
   grid-area: productos;
 }
-#servicios li, #servicios p {
+
+#banner {
+  grid-area: banner;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+#servicios li, p {
   text-align: center;
   margin-bottom: 1.5rem;
 }
@@ -322,7 +338,6 @@ input {
 /*FIN CONTACTO*/
 /*FOOTER*/
 #footer {
-  grid-area: footer;
   margin-top: 1rem;
   background-color: #fcfcfc;
   padding: 1.3rem;
@@ -333,17 +348,9 @@ input {
   font-size: 1.5rem;
 }
 
-/*FOOTER*/ /* DESTOP FIRST*/
-/*GRILLA PRINCIPAL*/
-#grilla {
-  display: grid;
-  grid-template-areas: "header header header" "productos productos productos" "banner banner banner" "footer footer footer";
-  grid-template-columns: repeat(3, 1fr);
-}
-
+/*FOOTER*/
 /*BANNER*/
 #banner {
-  grid-area: banner;
   background-color: #eaeaea;
   margin-top: 4rem;
   padding: 2rem;

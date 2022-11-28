@@ -1,4 +1,5 @@
 @import "variables";
+@import "layout";
 @import "inicio";
 @import "porfolio";
 @import "servicios";
@@ -10,27 +11,9 @@
 
 
 
-
-/* DESTOP FIRST*/
-
-
-/*GRILLA PRINCIPAL*/
-
-#grilla {
-    display: grid;
-    grid-template-areas:
-    "header header header"
-    "productos productos productos"
-    "banner banner banner"
-    "footer footer footer";
-    grid-template-columns: repeat(3, 1fr);
-}
-
-
 /*BANNER*/
 
 #banner {
-    grid-area: banner;
     background-color: #eaeaea;
     margin-top: 4rem;
     padding: 2rem;
@@ -62,16 +45,12 @@
 
 @media screen and (max-width: 767px) {
     .padre-banners {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-colum-center         
+        }
     }
-}
 
 .banner-caracteristicas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-colum-center;
     }
 
     .ulli{
@@ -81,9 +60,6 @@
         margin: 2rem;
         list-style: none;
     }
-
-
-
 
 
 
