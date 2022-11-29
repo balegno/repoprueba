@@ -261,7 +261,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin: auto 1rem;
+  margin: 3rem 2rem;
   height: 20rem;
   border-radius: 5% 40%;
 }
@@ -286,7 +286,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  margin-left: 4rem;
+  margin-left: 2rem;
   list-style: circle;
   font-family: "Roboto Mono", monospace;
   font-size: 1.5rem;

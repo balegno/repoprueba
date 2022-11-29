@@ -20,7 +20,7 @@
 .mmbf {
     @include flex-colum;
     justify-content: flex-end;
-    margin: auto 1rem;
+    margin: 3rem 2rem;
     height: 20rem;
     border-radius: 5% 40%;
 }
@@ -44,7 +44,7 @@
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    margin-left: 4rem;
+    margin-left: 2rem;
     list-style: circle;
     font-family: $fuente-titulo;
     font-size: 1.5rem;
