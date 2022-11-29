@@ -7,7 +7,7 @@
 
 .lili li {
     font-size: 1.3rem;
-    font-family: 'Roboto Mono', monospace;
+    font-family: $fuente-titulo;
 }
 
 .padre-cardserv {
@@ -17,13 +17,13 @@
     justify-items: center;
 }
 
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: $pantalla-xg) {
     .padre-cardserv {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: $pantalla-pequena) {
     .padre-cardserv {
         @include flex-colum-center;
     }
@@ -43,3 +43,84 @@
     margin-bottom: 1rem;
     height: 14rem;
 }
+
+.boton {
+    color: black;
+    font-family: $fuente-titulo;
+    font-size: 1.3rem;
+    background-color:#613dc1 ;
+    padding: .5rem;
+    border-radius: 1.3rem;
+    a {
+    text-decoration: none;
+    color: black;
+    }
+    &:hover {
+        transform: scale(1);
+        background-color: #ec9a29;
+        border: solid 1px #fcfcfc;
+        color: #fcfcfc;
+        a:hover {
+            background-color: #ec9a29;
+            color: #fcfcfc;
+        }
+    }
+}
+
+.serv {
+    height: 8rem;
+}
+
+/*BANNER*/
+
+.p-banner {
+    color: black;
+    text-align: center;
+}
+
+#banner {
+    background-color: #eaeaea;
+    margin-top: 4rem;
+    padding: 2rem;
+    h2,
+    h3,
+    li {
+        text-align: center;
+        color: black;
+    }
+}
+#banner li {
+    list-style-type: square;
+    margin-bottom: 3rem;
+}
+
+
+.padre-banners {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+@media screen and (max-width: $pantalla-mediana) {
+    .padre-banners {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .padre-banners {
+        @include flex-colum-center         
+        }
+    }
+
+.banner-caracteristicas {
+    @include flex-colum-center;
+    }
+
+    .ulli{
+        text-decoration: none;
+        font-family: $fuente-titulo;
+        font-size: 1.6rem;
+        margin: 2rem;
+        list-style: none;
+    }

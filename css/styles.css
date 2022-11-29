@@ -1,11 +1,6 @@
-/* EXTENDS*/
-.hover, .navbar-toggler:hover, .nav-link:hover {
-  transform: scale(1);
-  background-color: #ec9a29;
-  border: solid 1px #fcfcfc;
-}
-
-/*MIXIN*/
+/*VARIABLE PARA COLORES Y FUENTES*/
+/*FUENTE DE GOOGLE*/
+/*VARIABLES PARA MEDIAQUERIES*/
 * {
   margin: 0;
   padding: 0;
@@ -41,50 +36,45 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #fcfcfc;
   font-family: "Roboto Mono", monospace;
   text-align: center;
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #fcfcfc;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   margin: 1rem;
 }
 
-.banner {
-  color: black;
-  text-align: center;
-}
-
-.boton {
-  color: black;
-  font-family: "Roboto Mono", monospace;
-  font-size: 1.3rem;
-  background-color: #613dc1;
-  padding: 0.5rem;
-  border-radius: 1.3rem;
-}
-.boton a {
-  text-decoration: none;
-  color: black;
-}
-.boton:hover {
+/* EXTENDS*/
+.hover, .navbar-toggler:hover, .nav-link:hover {
   transform: scale(1);
   background-color: #ec9a29;
   border: solid 1px #fcfcfc;
-  color: #fcfcfc;
-}
-.boton:hover a:hover {
-  background-color: #ec9a29;
-  color: #fcfcfc;
 }
 
-.serv {
-  height: 8rem;
+/*MIXIN*/
+/*GRILLA*/
+#grilla {
+  display: grid;
+  grid-template-areas: "header header header" "productos productos productos" "banner banner banner" "footer footer footer";
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#servicios {
+  grid-area: productos;
+}
+
+#banner {
+  grid-area: banner;
+}
+
+#footer {
+  grid-area: footer;
 }
 
 /*Menu navegacion Flex*/
@@ -118,25 +108,6 @@ p {
   margin-right: 2rem;
   background-color: #613dc1;
 }
-/*GRILLA*/
-#grilla {
-  display: grid;
-  grid-template-areas: "header header header" "productos productos productos" "banner banner banner" "footer footer footer";
-  grid-template-columns: repeat(3, 1fr);
-}
-
-#servicios {
-  grid-area: productos;
-}
-
-#banner {
-  grid-area: banner;
-}
-
-#footer {
-  grid-area: footer;
-}
-
 #servicios li, p {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -181,6 +152,88 @@ p {
 .card img {
   margin-bottom: 1rem;
   height: 14rem;
+}
+
+.boton {
+  color: black;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.3rem;
+  background-color: #613dc1;
+  padding: 0.5rem;
+  border-radius: 1.3rem;
+}
+.boton a {
+  text-decoration: none;
+  color: black;
+}
+.boton:hover {
+  transform: scale(1);
+  background-color: #ec9a29;
+  border: solid 1px #fcfcfc;
+  color: #fcfcfc;
+}
+.boton:hover a:hover {
+  background-color: #ec9a29;
+  color: #fcfcfc;
+}
+
+.serv {
+  height: 8rem;
+}
+
+/*BANNER*/
+.p-banner {
+  color: black;
+  text-align: center;
+}
+
+#banner {
+  background-color: #eaeaea;
+  margin-top: 4rem;
+  padding: 2rem;
+}
+#banner h2,
+#banner h3,
+#banner li {
+  text-align: center;
+  color: black;
+}
+
+#banner li {
+  list-style-type: square;
+  margin-bottom: 3rem;
+}
+
+.padre-banners {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .padre-banners {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 767px) {
+  .padre-banners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.banner-caracteristicas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ulli {
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.6rem;
+  margin: 2rem;
+  list-style: none;
 }
 
 /*NOSOTROS*/
@@ -319,10 +372,7 @@ input {
 }
 
 /* DESCKTOP */
-.labinp {
-  display: none;
-}
-
+.labinp,
 .chk {
   display: none;
 }
@@ -341,9 +391,7 @@ input {
     align-content: center;
     justify-content: center;
   }
-  .chq {
-    display: none;
-  }
+  .chq,
   .labin .lab {
     display: none;
   }
@@ -370,55 +418,5 @@ input {
 }
 
 /*FOOTER*/
-/*BANNER*/
-#banner {
-  background-color: #eaeaea;
-  margin-top: 4rem;
-  padding: 2rem;
-}
-
-#banner li {
-  list-style-type: square;
-  margin-bottom: 3rem;
-}
-
-#banner h2,
-#banner h3,
-#banner li {
-  text-align: center;
-  color: black;
-}
-
-.padre-banners {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-}
-
-@media screen and (max-width: 992px) {
-  .padre-banners {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (max-width: 767px) {
-  .padre-banners {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.banner-caracteristicas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.ulli {
-  text-decoration: none;
-  font-family: "Roboto Mono", monospace;
-  font-size: 1.6rem;
-  margin: 2rem;
-  list-style: none;
-}
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,126 +1,17 @@
-// probando sass
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    color: #fcfcfc;
-}
+/*VARIABLE PARA COLORES Y FUENTES*/
+$bg-body: #2c0735;
+$fuente-grande: 4rem;
+$fuente-mediana: 3rem;
+$fuente-chica: 2.5rem;
+$fuente-muy-chica: 1.8rem;
 
-html {
-    font-size: 62.5%;
-}
-/*BODY*/
-body {
-    background-color: #2c0735;
-}
+/*FUENTE DE GOOGLE*/
+$fuente-titulo: "Roboto Mono", monospace;
+$fuente-parrafo: "Montserrat", sans-serif;
 
-img {
-    max-width: 100%;
-}
-
-h1 {
-    font-size: 4rem;
-    color: #fcfcfc;
-    font-family: 'Roboto Mono', monospace;
-    text-align: center;
-}
-
-h2 {
-    font-size: 3rem;
-    color: #fcfcfc;
-    font-family: 'Roboto Mono', monospace;
-    text-align: center;
-}
-
-h3 {
-    font-size: 2rem;
-    color: #fcfcfc;
-    font-family: 'Roboto Mono', monospace;
-    text-align: center;
-}
-
-p {
-    font-size: 2rem;
-    color: #fcfcfc;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    margin: 1rem;
-}
-
-.banner {
-    color: black;
-    text-align: center;
-}
-
-
-.boton {
-    color: black;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 1.3rem;
-    background-color:#613dc1 ;
-    padding: .5rem;
-    border-radius: 1.3rem;
-    a {
-    text-decoration: none;
-    color: black;
-    }
-    &:hover {
-        transform: scale(1);
-        background-color: #ec9a29;
-        border: solid 1px #fcfcfc;
-        color: #fcfcfc;
-        a:hover {
-            background-color: #ec9a29;
-            color: #fcfcfc;
-        }
-    }
-}
-
-
-
-.serv {
-    height: 8rem;
-} 
-
-/*Menu navegacion Flex*/
-
-#header-flex img {
-    width: 8rem;
-}
-
-.navbar-collapse {
-    margin: 1rem 1rem 1.5rem;
-}
-
-@media screen and (min-width: 992px) {
-    .navbar-expand-lg .navbar-collapse {
-        @include flex-row;
-        justify-content: flex-end;
-        margin-right: 1rem;
-    }
-}
-
-.nav-link {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 1.5rem;
-    color: #fcfcfc;
-    border-radius: 1rem;
-    padding: 0.5rem;
-    text-align: center;
-    background-color: #613dc1;
-    margin: .2rem .5rem;
-    &:hover {
-        @extend .hover;
-    }
-}
-
-
-.navbar-toggler {
-    margin-right: 2rem;
-    background-color: #613dc1;
-    &:hover {
-        @extend .hover;
-    }
-}
-
-
+/*VARIABLES PARA MEDIAQUERIES*/
+$pantalla-muy-pequena: 480px;
+$pantalla-pequena: 650px;
+$pantalla-mediana: 767px;
+$pantalla-grande: 992;
+$pantalla-xg: 1090px;

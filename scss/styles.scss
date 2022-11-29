@@ -1,5 +1,5 @@
-@import "globales";
 @import "variables";
+@import "globales";
 @import "layout";
 @import "inicio";
 @import "porfolio";
@@ -7,60 +7,3 @@
 @import "nosotros";
 @import "contacto";
 @import "footer";
-
-
-
-
-
-/*BANNER*/
-
-#banner {
-    background-color: #eaeaea;
-    margin-top: 4rem;
-    padding: 2rem;
-}
-#banner li {
-    list-style-type: square;
-    margin-bottom: 3rem;
-}
-
-#banner h2,
-#banner h3,
-#banner li {
-    text-align: center;
-    color: black;
-}
-
-
-.padre-banners {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-}
-
-@media screen and (max-width: 992px) {
-    .padre-banners {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .padre-banners {
-        @include flex-colum-center         
-        }
-    }
-
-.banner-caracteristicas {
-    @include flex-colum-center;
-    }
-
-    .ulli{
-        text-decoration: none;
-        font-family: 'Roboto Mono', monospace;
-        font-size: 1.6rem;
-        margin: 2rem;
-        list-style: none;
-    }
-
-
-
