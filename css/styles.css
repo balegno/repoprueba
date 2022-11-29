@@ -86,7 +86,7 @@ p {
   margin: 1rem 1rem 1.5rem;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992) {
   .navbar-expand-lg .navbar-collapse {
     display: flex;
     flex-direction: row;
@@ -269,7 +269,7 @@ p {
 #redes {
   display: flex;
   flex-wrap: initial;
-  margin: 0rem 3rem;
+  margin-left: 4rem;
 }
 #redes img {
   height: 5rem;
@@ -285,6 +285,7 @@ p {
 .datos {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
   margin-left: 4rem;
   list-style: circle;
   font-family: "Roboto Mono", monospace;
@@ -300,7 +301,7 @@ p {
   justify-items: center;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1014px) {
   #papcar {
     grid-template-columns: repeat(1, 1fr);
     display: flex;
@@ -308,7 +309,7 @@ p {
     align-items: center;
   }
 }
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 555px) {
   #papcar {
     grid-template-columns: 1fr;
     display: flex;

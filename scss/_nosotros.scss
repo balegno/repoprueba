@@ -28,7 +28,7 @@
 #redes {
     display: flex;
     flex-wrap: initial;
-    margin: 0rem 3rem;
+    margin-left: 4rem;
     img {
     height: 5rem;
     }
@@ -43,6 +43,7 @@
 .datos {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
     margin-left: 4rem;
     list-style: circle;
     font-family: $fuente-titulo;
@@ -61,14 +62,14 @@
 } 
 
 
-@media screen and (max-width:990px){
+@media screen and (max-width: $pantalla-x){
     #papcar {
         grid-template-columns: repeat(1, 1fr) ;
         @include flex-colum-center;
     }
 } 
 
-@media screen and (max-width:565px){
+@media screen and (max-width:$pantalla-mas-pequena){
     #papcar {
         grid-template-columns: 1fr;
         @include flex-colum;

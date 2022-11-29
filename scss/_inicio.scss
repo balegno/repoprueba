@@ -9,7 +9,7 @@
     margin: 1rem 1rem 1.5rem;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: $pantalla-grande) {
     .navbar-expand-lg .navbar-collapse {
         @include flex-row;
         justify-content: flex-end;
