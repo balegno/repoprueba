@@ -1,0 +1,25 @@
+/* EXTENDS*/
+
+.hover {
+    transform: scale(1);
+    background-color: #ec9a29;
+    border: solid 1px #fcfcfc;
+}
+
+
+/*MIXIN*/
+@mixin flex-colum-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-colum {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}

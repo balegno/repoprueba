@@ -1,3 +1,11 @@
+/* EXTENDS*/
+.hover, .navbar-toggler:hover, .nav-link:hover {
+  transform: scale(1);
+  background-color: #ec9a29;
+  border: solid 1px #fcfcfc;
+}
+
+/*MIXIN*/
 * {
   margin: 0;
   padding: 0;
@@ -42,8 +50,8 @@ h3 {
 p {
   font-size: 2rem;
   color: #fcfcfc;
-  font-family: "Montserrat", sans-serif;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
   margin: 1rem;
 }
 
@@ -64,16 +72,14 @@ p {
   text-decoration: none;
   color: black;
 }
-
-.boton a:hover {
-  background-color: #ec9a29;
-  color: #fcfcfc;
-}
-
 .boton:hover {
   transform: scale(1);
   background-color: #ec9a29;
   border: solid 1px #fcfcfc;
+  color: #fcfcfc;
+}
+.boton:hover a:hover {
+  background-color: #ec9a29;
   color: #fcfcfc;
 }
 
@@ -86,28 +92,32 @@ p {
   width: 8rem;
 }
 
-.navbar {
-  margin-right: 1rem;
-  margin-bottom: 2rem;
+.navbar-collapse {
+  margin: 1rem 1rem 1.5rem;
 }
 
+@media screen and (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 1rem;
+  }
+}
 .nav-link {
   font-family: "Roboto Mono", monospace;
   font-size: 1.5rem;
-  color: #eaeaea;
+  color: #fcfcfc;
   border-radius: 1rem;
   padding: 0.5rem;
   text-align: center;
   background-color: #613dc1;
   margin: 0.2rem 0.5rem;
 }
-
 .navbar-toggler {
+  margin-right: 2rem;
   background-color: #613dc1;
 }
-
-/*EXTENDS*/
-/*MIXIN*/
 /*GRILLA*/
 #grilla {
   display: grid;
@@ -198,7 +208,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin: 4rem 1rem;
+  margin: auto 1rem;
   height: 20rem;
   border-radius: 5% 40%;
 }
