@@ -114,42 +114,90 @@ p {
   grid-area: footer;
 }
 
+/* GRILLA PRFOLIO*/
+#pap-porf {
+  display: grid;
+  grid-template-areas: "header header header" "card card card" "footer footer footer";
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#header-flex {
+  grid-area: header;
+}
+
+#porfolio {
+  grid-area: card;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+#pap-porf {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#pap-porf {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7rem 3rem;
+  justify-items: center;
+}
+
+@media screen and (min-width: 952px) {
+  #pap-porf {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 650px) {
+  #pap-porf {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
 #porf {
-  position: relative;
   background-color: #613dc1;
+  border: solid 2px #5d737e;
   border-radius: 4rem;
   height: 30rem;
   width: 25rem;
-  margin: 5rem 2rem;
-  display: flex;
-  align-content: center;
+  padding: 1rem;
 }
-#porf .hhh {
+#porf .hhh,
+#porf p {
   display: flex;
   flex-direction: row;
   align-items: center;
+  text-align: center;
 }
 #porf #mmulti {
   height: 13rem;
   border-radius: 30%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  margin: -6rem 4rem 1rem;
 }
 #porf #vdlv {
   height: 13rem;
   border-radius: 30%;
+  margin: -6rem 4rem 1rem;
 }
 #porf #hz {
-  height: 15rem;
+  height: 13rem;
   border-radius: 50%;
+  margin: -6rem 4rem 1rem;
 }
 #porf #veg {
   height: 15rem;
+  margin: -6rem 4rem 1rem;
 }
 #porf #bv {
-  height: 15rem;
+  height: 12rem;
   border-radius: 50%;
+  margin: -6rem 4rem 1rem;
 }
 
 #servicios li, p {

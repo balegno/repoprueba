@@ -1,41 +1,70 @@
+#pap-porf {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+#pap-porf {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7rem 3rem;
+    justify-items: center;
+}
+@media screen and (min-width: 952px) {
+    #pap-porf {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: $pantalla-pequena) {
+    #pap-porf {
+        @include flex-colum-center
+    }
+}
+
+
 #porf {
-    position: relative;
     background-color: $secundario;
+    border: solid 2px $gris;
     border-radius: 4rem;
     height: 30rem;
     width: 25rem;
-    margin: 5rem 2rem;
-    display: flex;
-    align-content: center;
-    .hhh {
+    padding: 1rem;
+    
+
+    .hhh,
+    p {
         display: flex;
         flex-direction: row;
         align-items: center;
-
-        
+        text-align: center;
     }
     
     #mmulti {
         height: 13rem;
         border-radius: 30%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        margin: -6rem 4rem 1rem;
         
     }
     #vdlv {
         height: 13rem;
         border-radius: 30%;
+        margin: -6rem 4rem 1rem;
     }
     #hz {
-        height: 15rem;
+        height: 13rem;
         border-radius: 50%;
+        margin: -6rem 4rem 1rem;
     }
     #veg {
         height: 15rem;
+        margin: -6rem 4rem 1rem;
     }
     #bv {
-        height: 15rem;
+        height: 12rem;
         border-radius: 50%;
+        margin: -6rem 4rem 1rem;
     }
 }
+
