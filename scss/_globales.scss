@@ -59,6 +59,7 @@ p {
 @mixin flex-colum-center {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -70,4 +71,6 @@ p {
 @mixin flex-row {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
 }

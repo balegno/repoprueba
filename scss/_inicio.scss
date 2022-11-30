@@ -5,17 +5,18 @@
     width: 8rem;
 }
 
+
 .navbar-collapse {
     margin: 1rem 1rem 1.5rem;
 }
 
-@media screen and (min-width: $pantalla-grande) {
+@media screen and (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
         @include flex-row;
-        justify-content: flex-end;
         margin-right: 1rem;
     }
 }
+
 
 .nav-link {
     font-family: $fuente-titulo;

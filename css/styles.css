@@ -58,6 +58,38 @@ p {
 }
 
 /*MIXIN*/
+/*Menu navegacion Flex*/
+#header-flex img {
+  width: 8rem;
+}
+
+.navbar-collapse {
+  margin: 1rem 1rem 1.5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 1rem;
+  }
+}
+.nav-link {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  color: #fcfcfc;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #613dc1;
+  margin: 0.2rem 0.5rem;
+}
+.navbar-toggler {
+  margin-right: 2rem;
+  background-color: #613dc1;
+}
 /*GRILLA*/
 #grilla {
   display: grid;
@@ -77,37 +109,6 @@ p {
   grid-area: footer;
 }
 
-/*Menu navegacion Flex*/
-#header-flex img {
-  width: 8rem;
-}
-
-.navbar-collapse {
-  margin: 1rem 1rem 1.5rem;
-}
-
-@media screen and (min-width: 992) {
-  .navbar-expand-lg .navbar-collapse {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 1rem;
-  }
-}
-.nav-link {
-  font-family: "Roboto Mono", monospace;
-  font-size: 1.5rem;
-  color: #fcfcfc;
-  border-radius: 1rem;
-  padding: 0.5rem;
-  text-align: center;
-  background-color: #613dc1;
-  margin: 0.2rem 0.5rem;
-}
-.navbar-toggler {
-  margin-right: 2rem;
-  background-color: #613dc1;
-}
 #servicios li, p {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -134,6 +135,7 @@ p {
   .padre-cardserv {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
   }
 }
@@ -143,6 +145,7 @@ p {
   border-radius: 1rem 8rem;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
   padding: 1rem;
   margin: 1rem;
@@ -219,12 +222,14 @@ p {
   .padre-banners {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
   }
 }
 .banner-caracteristicas {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -240,6 +245,7 @@ p {
 #papcar {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -278,6 +284,7 @@ p {
 .nomm {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
   margin: 1rem;
 }
@@ -306,6 +313,7 @@ p {
     grid-template-columns: repeat(1, 1fr);
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
   }
 }
@@ -335,6 +343,7 @@ p {
 #formu {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -383,12 +392,15 @@ input {
   #formu {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
     justify-content: center;
   }
   .chk {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
     align-content: center;
     justify-content: center;
   }
