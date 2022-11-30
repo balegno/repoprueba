@@ -1,27 +1,29 @@
+h2, p {
+    text-align: center;
+}
 #pap-porf {
     margin-top: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-}
-#pap-porf {
+    justify-items: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 7rem 3rem;
     justify-items: center;
+    row-gap: 5rem;
 }
-@media screen and (min-width: 952px) {
+@media screen and (max-width: $pantalla-card) {
     #pap-porf {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width: $pantalla-pequena) {
+@media screen and (max-width: $pantalla-mas-pequena) {
     #pap-porf {
-        @include flex-colum-center
+        grid-template-columns: repeat(1,1fr);
     }
 }
+
 
 
 #porf {
@@ -31,14 +33,10 @@
     height: 30rem;
     width: 25rem;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
-
-    .hhh,
-    p {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        text-align: center;
     }
     
     #mmulti {
@@ -66,5 +64,4 @@
         border-radius: 50%;
         margin: -6rem 4rem 1rem;
     }
-}
 

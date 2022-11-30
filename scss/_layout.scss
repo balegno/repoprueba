@@ -21,22 +21,22 @@
     grid-area: footer;
 }
 
-/* GRILLA PRFOLIO*/
+// /* GRILLA PRFOLIO*/
 
-#pap-porf {
-    display: grid;
-    grid-template-areas:
-    "header header header"
-    "card card card"
-    "footer footer footer";
-    grid-template-columns: repeat(3, 1fr);
-}
-#header-flex {
-    grid-area: header;
-}
-#porfolio {
-    grid-area: card;
-}
-#footer {
-    grid-area: footer;
-}
+// #porfolio {
+//     display: grid;
+//     grid-template-areas:
+//     "header header header"
+//     "card card card"
+//     "footer footer footer";
+//     grid-template-columns: repeat(2, 1fr);
+// }
+// #header-flex {
+//     grid-area: header;
+// }
+// #pap-porf {
+//     grid-area: card;
+// }
+// #footer {
+//     grid-area: footer;
+// }
