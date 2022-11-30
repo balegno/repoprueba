@@ -6,7 +6,7 @@
 
 
 .lili li {
-    font-size: 1.3rem;
+    font-size: $super-chica;
     font-family: $fuente-titulo;
 }
 
@@ -31,12 +31,12 @@
 
 .cardserv {
     width: 23rem;
-    border: solid 2px gray;
+    border: solid 2px $gris-claro;
     border-radius: 1rem 8rem;
     @include flex-colum-center;
     padding: 1rem;
     margin: 1rem;
-    background-color: #5d737e;
+    background-color: $gris;
 }
 
 .card img {
@@ -45,24 +45,24 @@
 }
 
 .boton {
-    color: black;
+    color: $negro;
     font-family: $fuente-titulo;
-    font-size: 1.3rem;
-    background-color:#613dc1 ;
+    font-size: $super-chica;
+    background-color: $secundario;
     padding: .5rem;
     border-radius: 1.3rem;
     a {
     text-decoration: none;
-    color: black;
+    color: $negro;
     }
     &:hover {
         transform: scale(1);
-        background-color: #ec9a29;
-        border: solid 1px #fcfcfc;
-        color: #fcfcfc;
+        background-color: $naranja;
+        border: solid 1px $primario;
+        color: $primario;
         a:hover {
-            background-color: #ec9a29;
-            color: #fcfcfc;
+            background-color: $naranja;
+            color: $primario;
         }
     }
 }
@@ -74,19 +74,19 @@
 /*BANNER*/
 
 .p-banner {
-    color: black;
+    color: $negro;
     text-align: center;
 }
 
 #banner {
-    background-color: #eaeaea;
+    background-color: $primario;
     margin-top: 4rem;
     padding: 2rem;
     h2,
     h3,
     li {
         text-align: center;
-        color: black;
+        color: $negro;
     }
 }
 #banner li {
@@ -120,7 +120,7 @@
     .ulli{
         text-decoration: none;
         font-family: $fuente-titulo;
-        font-size: 1.6rem;
+        font-size: $fuente-muy-chica;
         margin: 2rem;
         list-style: none;
     }

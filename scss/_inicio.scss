@@ -20,12 +20,12 @@
 
 .nav-link {
     font-family: $fuente-titulo;
-    font-size: 1.5rem;
-    color: #fcfcfc;
+    font-size:  $interm;
+    color: $primario;
     border-radius: 1rem;
     padding: 0.5rem;
     text-align: center;
-    background-color: #613dc1;
+    background-color: $secundario;
     margin: .2rem .5rem;
     &:hover {
         @extend .hover;
@@ -34,7 +34,7 @@
 
 .navbar-toggler {
     margin-right: 2rem;
-    background-color: #613dc1;
+    background-color: $secundario;
     &:hover {
         @extend .hover;
     }

@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: #fcfcfc;
+    color: $primario;
 }
 
 html {
@@ -10,7 +10,7 @@ html {
 }
 /*BODY*/
 body {
-    background-color: #2c0735;
+    background-color: $bg-body;
 }
 
 img {
@@ -19,28 +19,28 @@ img {
 
 h1 {
     font-size: $fuente-grande;
-    color: #fcfcfc;
+    color: $primario;
     font-family: $fuente-titulo;
     text-align: center;
 }
 
 h2 {
     font-size: $fuente-mediana;
-    color: #fcfcfc;
+    color: $primario;
     font-family: $fuente-titulo;
     text-align: center;
 }
 
 h3 {
     font-size: $fuente-chica;
-    color: #fcfcfc;
+    color: $primario;
     font-family: $fuente-titulo ;
     text-align: center;
 }
 
 p {
     font-size: $fuente-muy-chica;
-    color: #fcfcfc;
+    color: $primario;
     text-align: center;
     font-family: $fuente-parrafo;
     margin: 1rem;
@@ -50,8 +50,8 @@ p {
 
 .hover {
     transform: scale(1);
-    background-color: #ec9a29;
-    border: solid 1px #fcfcfc;
+    background-color: $naranja;
+    border: solid 1px $primario;
 }
 
 
@@ -73,4 +73,12 @@ p {
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
+}
+
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    
 }

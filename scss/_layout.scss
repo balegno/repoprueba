@@ -8,7 +8,9 @@
     "footer footer footer";
     grid-template-columns: repeat(3, 1fr);
 }
-
+#header-flex {
+    grid-area: header;
+}
 #servicios {
     grid-area: productos;
 }

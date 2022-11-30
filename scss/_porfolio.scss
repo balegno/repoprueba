@@ -1,0 +1,41 @@
+#porf {
+    position: relative;
+    background-color: $secundario;
+    border-radius: 4rem;
+    height: 30rem;
+    width: 25rem;
+    margin: 5rem 2rem;
+    display: flex;
+    align-content: center;
+    .hhh {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        
+    }
+    
+    #mmulti {
+        height: 13rem;
+        border-radius: 30%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    #vdlv {
+        height: 13rem;
+        border-radius: 30%;
+    }
+    #hz {
+        height: 15rem;
+        border-radius: 50%;
+    }
+    #veg {
+        height: 15rem;
+    }
+    #bv {
+        height: 15rem;
+        border-radius: 50%;
+    }
+}

@@ -2,10 +2,13 @@
 
 #footer {
     margin-top: 1rem;
-    background-color: #fcfcfc ;
+    background-color: $primario;
     padding: 1.3rem;
+    position: relative;
+    bottom: 0px;
+    
     p {
-    color: black;
+    color: $negro;
     font-family: $fuente-titulo;
     font-size: 1.5rem;
     }
