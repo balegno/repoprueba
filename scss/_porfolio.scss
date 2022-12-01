@@ -37,10 +37,8 @@ h2, p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .porf {
-        font-family: $fuente-titulo;
-        font-size: $fuente-mediana;
-    }
+    font-family: $fuente-titulo;
+    font-size: $fuente-mediana;
 
     p {
         font-family: $fuente-parrafo;
@@ -55,18 +53,18 @@ h2, p {
     #mmulti {
         height: 13rem;
         border-radius: 50%;
-        margin: -6rem 4rem 1rem;
+        @include margin;
         
     }
     #vdlv {
         height: 13rem;
         border-radius: 50%;
-        margin: -6rem 4rem 1rem;
+        @include margin;
     }
     #hz {
         height: 13rem;
         border-radius: 50%;
-        margin: -6rem 4rem 1rem;
+        @include margin;
     }
     #veg {
         height: 15rem;
@@ -75,12 +73,12 @@ h2, p {
     #bv {
         height: 12rem;
         border-radius: 50%;
-        margin: -6rem 4rem 1rem;
+        @include margin;
     }
     #bt {
         height: 12rem;
         border-radius: 40%;
-        margin: -6rem 4rem 1rem;
+        @include margin;
     }
 
     }

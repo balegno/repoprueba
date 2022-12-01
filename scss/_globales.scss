@@ -82,3 +82,7 @@ p {
     align-content: center;
     
 }
+
+@mixin margin {
+    margin: -6rem 4rem 1rem;
+}
