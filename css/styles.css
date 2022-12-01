@@ -141,43 +141,57 @@ h2, p {
   }
 }
 #porf {
+  margin: 2rem auto;
   background-color: #613dc1;
   border: solid 2px #5d737e;
-  border-radius: 4rem;
-  height: 30rem;
-  width: 25rem;
+  border-radius: 2rem 8rem;
+  height: auto;
+  width: 23rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-#mmulti {
-  height: 13rem;
-  border-radius: 30%;
-  margin: -6rem 4rem 1rem;
+#porf .porf {
+  font-family: "Roboto Mono", monospace;
+  font-size: 3rem;
 }
-
-#vdlv {
-  height: 13rem;
-  border-radius: 30%;
-  margin: -6rem 4rem 1rem;
+#porf p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
 }
-
-#hz {
+#porf li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  list-style-type: square;
+}
+#porf #mmulti {
   height: 13rem;
   border-radius: 50%;
   margin: -6rem 4rem 1rem;
 }
-
-#veg {
-  height: 15rem;
+#porf #vdlv {
+  height: 13rem;
+  border-radius: 50%;
   margin: -6rem 4rem 1rem;
 }
-
-#bv {
+#porf #hz {
+  height: 13rem;
+  border-radius: 50%;
+  margin: -6rem 4rem 1rem;
+}
+#porf #veg {
+  height: 15rem;
+  margin: -6rem 4rem -1rem;
+}
+#porf #bv {
   height: 12rem;
   border-radius: 50%;
+  margin: -6rem 4rem 1rem;
+}
+#porf #bt {
+  height: 12rem;
+  border-radius: 40%;
   margin: -6rem 4rem 1rem;
 }
 
@@ -411,6 +425,16 @@ h2, p {
 #contacto h2 {
   text-align: center;
   margin: 2rem;
+}
+#contacto p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+}
+#contacto li {
+  text-align: center;
+  list-style-type: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.8rem;
 }
 
 #formu {

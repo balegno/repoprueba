@@ -1,9 +1,21 @@
 /*CONTACTO*/
 
 
-#contacto h2 {
-    text-align: center;
-    margin: 2rem;
+#contacto {
+    h2 {
+        text-align: center;
+        margin: 2rem;
+    }
+    p {
+        font-family: $fuente-parrafo;
+        font-size: $fuente-muy-chica;
+    }
+    li {
+        text-align: center;
+        list-style-type: none;
+        font-family: $fuente-titulo;
+        font-size: $fuente-muy-chica;
+    }
 }
 
 #formu {
