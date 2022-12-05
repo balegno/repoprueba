@@ -3,10 +3,6 @@ h2, p {
 }
 #pap-porf {
     margin-top: 6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -34,9 +30,7 @@ h2, p {
     height: auto;
     width: 23rem;
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-colum-acenter;
     font-family: $fuente-titulo;
     font-size: $fuente-mediana;
 

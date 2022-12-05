@@ -1,16 +1,13 @@
 
-#servicios li{
-    list-style-type: square;
-    text-align: center;
-        margin-bottom: 1.5rem;
-} 
-p {
+#servicios p {
         text-align: center;
         margin-bottom: 1.5rem;
     }
 
 
 .lili li {
+    margin: 1.5rem 3rem;
+    list-style-type: square;
     font-size: $super-chica;
     font-family: $fuente-titulo;
 }
@@ -41,16 +38,15 @@ p {
     @include flex-colum-center;
     padding: 1rem;
     margin: 1rem;
-    background-color: $gris;
+    background-color: $secundario;
 }
 
 .card img {
-    margin-bottom: 1rem;
     height: 14rem;
 }
 
 .boton {
-    color: $negro;
+    color: $primario;
     font-family: $fuente-titulo;
     font-size: $super-chica;
     background-color: $secundario;
@@ -58,16 +54,18 @@ p {
     border-radius: 1.3rem;
     a {
     text-decoration: none;
-    color: $negro;
+    color: $primario;
+    padding: 5px;
+    border-radius: 1.3rem;
     }
     &:hover {
         transform: scale(1);
         background-color: $naranja;
         border: solid 1px $primario;
-        color: $primario;
+        color: $negro;
         a:hover {
             background-color: $naranja;
-            color: $primario;
+            color: $negro;
         }
     }
 }
@@ -93,7 +91,6 @@ p {
         color: $negro;
     }
     li {
-        text-align: center;
         color: $negro;
         list-style-type: square;
         margin-bottom: 3rem;
@@ -128,5 +125,4 @@ p {
         font-family: $fuente-titulo;
         font-size: $fuente-muy-chica;
         margin: 2rem;
-        list-style: none;
     }
